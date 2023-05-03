@@ -1,0 +1,19 @@
+{
+    "name": "avalon/contact",
+    "description": "This will send email to admin and save the contact query in DB",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "amit",
+            "email": "amit@dataforall.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Avalon\\Contact\\": "src/"
+        }
+    }
+}
