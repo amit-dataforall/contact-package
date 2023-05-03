@@ -15,12 +15,5 @@
         "psr-4": {
             "Avalon\\Contact\\": "src/"
         }
-    },
-    "extra": {
-        "laravel": {
-            "providers": [
-                "Avalon\\Contact\\ContactServiceProvider"
-            ]
-        }
     }
 }
