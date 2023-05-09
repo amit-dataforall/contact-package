@@ -2,6 +2,7 @@
 
 namespace Avalon\Contact;
 
+use Illuminate\Support\Facades\View;
 use Illuminate\Support\ServiceProvider;
 class ContactServiceProvider extends ServiceProvider
 {
