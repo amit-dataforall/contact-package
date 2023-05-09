@@ -55,9 +55,6 @@
                 </div>
             </div>
         </div>
-        {{-- @if (isset($input))
-            @dd($input)
-        @endif --}}
 
         <form action="{{ url('/contact') }}" method="post">
             @csrf
@@ -95,7 +92,7 @@
                 <div class="col-xs-12 col-sm-12 col-md-12" style="padding:20px 20px 20px 20px">
                     <div class="form-group">
                         <strong style="color: white">Message:</strong>
-                        <textarea style="margin-top:10px; font-size:14px; padding:8px; border: 3px solid #4165b4" name="message" class="form-control" placeholder="Your Query">@if(isset($input["message"])){{ $input["message"] }}@endif</textarea>
+                        <textarea style="margin-top:10px; font-size:14px; padding:8px; border: 3px solid #4165b4" name="message" maxlength="100" class="form-control" placeholder="Your Query">@if(isset($input["message"])){{ $input["message"] }}@endif</textarea>
                         @if (isset($validationErrors))
                             <div style="color: red">
                                 {{ $validationErrors->first('message') }}
